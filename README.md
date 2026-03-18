@@ -10,7 +10,7 @@
 
    cd CAS_shiny
 
-4. Open the project in R or RStudio (recommended: open the `.Rproj` file if available).
+4. Open the project in R or RStudio.
 
 5. Install `renv` (if not already installed):
 
