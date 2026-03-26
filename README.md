@@ -7,13 +7,19 @@ install.packages(
 )
 
 install.packages("remotes")
+
 remotes::install_github("jaredhuling/personalized@v0.2.7")
 
 install.packages("shiny")
+
 install.packages("shinyjs")
+
 install.packages("ggplot2")
+
 install.packages("shinydashboard")
 
+
 library(shiny)
+
 runGitHub(repo = "CAS_shiny", username = "Lungwan", ref = "main")
 
