@@ -1,25 +1,19 @@
 ## How to Run the App Locally
 
-1. Open a terminal (Mac: Terminal, Windows: Command Prompt / PowerShell / Git Bash).
+### Install required packages
+install.packages(
+  "xgboost",
+  repos = "https://packagemanager.posit.co/cran/2025-05-20"
+)
 
-2. Clone this repository:
+install.packages("remotes")
+remotes::install_github("jaredhuling/personalized@v0.2.7")
 
-   git clone https://github.com/Lungwan/CAS_shiny
+install.packages("shiny")
+install.packages("shinyjs")
+install.packages("ggplot2")
+install.packages("shinydashboard")
 
-3. Navigate into the project folder:
+library(shiny)
+runGitHub(repo = "CAS_shiny", username = "Lungwan", ref = "main")
 
-   cd CAS_shiny
-
-4. Open the project in R or RStudio.
-
-5. Install `renv` (if not already installed):
-
-   install.packages("renv")
-
-6. Restore the project environment:
-
-   renv::restore()
-
-7. Run the Shiny app:
-
-   shiny::runApp()
